@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TransactionTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+        <!-- 设置状态栏颜色为透明，可以解决状态栏闪烁的问题-->
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+    </style>
+</resources>

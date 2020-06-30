@@ -1,4 +1,4 @@
-package cn.rjgc.aoputil;
+package cn.rjgc.aoputil.anti_shake;
 
 
 import android.util.Log;
@@ -21,7 +21,7 @@ public class AntiShakeAspect {
      * 根据pointcut语法寻找符合要求的jpoint
      */
     //MethodSignature语法规则 @Annotation java修饰符 返回值类型 类名.方法名(参数)
-    @Pointcut("execution(@cn.rjgc.aoputil.annotation.AntiShake * *(..))")
+    @Pointcut("execution(@cn.rjgc.aoputil.anti_shake.AntiShake * *(..))")
     public void findJPoint() {
 
     }
@@ -29,6 +29,8 @@ public class AntiShakeAspect {
     /**
      * 在符合findJPoint()要求的连接点方法运行时运行此通知
      * @param joinPoint 使用@Around注解必须带着此参数
+     *
+     * @Around 表示antiShake()方法执行的时机
      */
     @Around("findJPoint()")
     public void antiShake(ProceedingJoinPoint joinPoint) {

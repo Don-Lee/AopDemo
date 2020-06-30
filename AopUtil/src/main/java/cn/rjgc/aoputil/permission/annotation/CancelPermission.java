@@ -1,4 +1,4 @@
-package cn.rjgc.aoputil.annotation;
+package cn.rjgc.aoputil.permission.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -7,6 +7,5 @@ import java.lang.annotation.Target;
 
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface AntiShake {
-
+public @interface CancelPermission {
 }
