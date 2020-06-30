@@ -17,7 +17,7 @@
 1. 在module的build.gradle添加如下gradle依赖
 
    ```java
-   implementation 'com.github.Don-Lee:AopDemo:1.0'
+   implementation 'com.github.Don-Lee:AopDemo:1.0.2'
    ```
 
 2. 因为本库基于沪江的AspectJx开发，因此要配合[aspectjx](https://github.com/HujiangTechnology/gradle_plugin_android_aspectjx)使用
