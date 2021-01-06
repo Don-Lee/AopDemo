@@ -26,7 +26,8 @@
 
       ```groovy
       dependencies {
-              classpath 'com.hujiang.aspectjx:gradle-android-plugin-aspectjx:2.0.8'
+              classpath 'com.hujiang.aspectjx:gradle-android-plugin-aspectjx:2.0.10'
+	      classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
       }
       ```
       
