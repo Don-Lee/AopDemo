@@ -29,6 +29,17 @@
               classpath 'com.hujiang.aspectjx:gradle-android-plugin-aspectjx:2.0.8'
       }
       ```
+      
+   - 在项目根目录的build.gradle里添加jitpack依赖库  
+   
+      ```groovy
+      allprojects {
+		   repositories {
+			   ...
+			   maven { url 'https://jitpack.io' }
+		   }
+	   }
+      ```
 
    - 在app项目的build.gradle里应用插件
 
